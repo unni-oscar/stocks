@@ -1,0 +1,63 @@
+<template>
+    <div>
+        <h2 class="text-center">Products List</h2>
+ 
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Symbol</th>
+                <th>Series</th>
+                <th>Bse Code</th>
+                <th>ISIN No</th>
+                <th>Group</th>
+                <!-- <th>Actions</th> -->
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="scrip in scrips" :key="scrip.id">
+                <td>{{ scrip.id }}</td>
+                <td>{{ scrip.symbol }}</td>
+                <td>{{ scrip.series }}</td>
+                <td>{{ scrip.bse_code }}</td>
+                <td>{{ scrip.isin_no }}</td>
+                <td>{{ scrip.group }}</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <!-- <router-link :to="{name: 'edit', params: { id: product.id }}" class="btn btn-success">Edit</router-link> -->
+                        <!-- <button class="btn btn-danger" @click="deleteProduct(product.id)">Delete</button> -->
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</template>
+ 
+<script>
+    export default {
+        data() {
+            return {
+                scrips: []
+            }
+        },
+        created() {
+            this.axios
+                .get('http://localhost:8000/api/scrips/')
+                .then(response => {
+                    console.log(response.data);
+                    this.scrips = response.data;
+                });
+        },
+        methods: {
+            // deleteProduct(id) { 
+            //     this.axios
+            //         .delete(`http://localhost:8000/api/products/${id}`)
+            //         .then(response => {
+            //             let i = this.products.map(data => data.id).indexOf(id);
+            //             this.products.splice(i, 1)
+            //         });
+            // }
+        }
+    }
+</script>
