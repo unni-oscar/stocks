@@ -1,16 +1,15 @@
 <template>
     <div>
-        <h2 class="text-center">Products List</h2>
+        <h2 class="text-center">Scrip List</h2>
  
         <table class="table">
             <thead>
             <tr>
                 <th>ID</th>
                 <th>Symbol</th>
-                <th>Series</th>
-                <th>Bse Code</th>
+                <th>Name</th>               
                 <th>ISIN No</th>
-                <th>Group</th>
+                <th>Listing Date</th>
                 <!-- <th>Actions</th> -->
             </tr>
             </thead>
@@ -18,10 +17,10 @@
             <tr v-for="scrip in scrips" :key="scrip.id">
                 <td>{{ scrip.id }}</td>
                 <td>{{ scrip.symbol }}</td>
-                <td>{{ scrip.series }}</td>
-                <td>{{ scrip.bse_code }}</td>
+                <td>{{ scrip.name }}</td>
+               
                 <td>{{ scrip.isin_no }}</td>
-                <td>{{ scrip.group }}</td>
+                <td>{{ scrip.listing_date }}</td>
                 <td>
                     <div class="btn-group" role="group">
                         <!-- <router-link :to="{name: 'edit', params: { id: product.id }}" class="btn btn-success">Edit</router-link> -->

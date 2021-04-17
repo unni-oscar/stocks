@@ -16,10 +16,12 @@ class CreateScripsTable extends Migration
         Schema::create('scrips', function (Blueprint $table) {
             $table->id();
             $table->string('symbol');
-            $table->string('series');
-            $table->integer('bse_code');
+            $table->string('name');
+            $table->string('series')->nullable();
+            $table->integer('bse_code')->nullable();
             $table->string('isin_no');
-            $table->string('group');
+            $table->date('listing_date');
+            $table->string('group')->nullable();
             $table->timestamps();
         });
     }

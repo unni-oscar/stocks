@@ -9,31 +9,36 @@ class ScripController extends Controller
 {
     public function index()
     {
-        $scrips = Scrip::all()->toArray();
+        $scrips = Scrip::all();
+        // $scrips->listing_date->format('d/m/Y');
         return $scrips;      
     }
 
     public function setup()
     {       
         $collection = Scrip::all();
-        $file = public_path('equity.csv');
+        $file = public_path('LDE_EQUITIES_MORE_THAN_5_YEARS.csv');
+        
         $scripArr = $this->csvToArray($file);
         $data = [];
-        
+
         for ($i = 0; $i < count($scripArr); $i ++)
         {
-            $symbol =  $scripArr[$i]['symbol'];
+            $symbol =  $scripArr[$i]['isin_no'];
             $desired_object = $collection->filter(function($item) use ($symbol) {
-                return $item->symbol == $symbol ;
+                return $item->isin_no == $symbol ;
             });
 
             if(count($desired_object) == 0) {
+                
                 $data[] = [
                     'symbol' => $scripArr[$i]['symbol'],
-                    'series' => $scripArr[$i]['series'],
-                    'bse_code' => $scripArr[$i]['bse_code'],
+                    'name' => $scripArr[$i]['name'],
+                    // 'series' => $scripArr[$i]['series'],
+                    // 'bse_code' => $scripArr[$i]['bse_code'],
                     'isin_no' => $scripArr[$i]['isin_no'],
-                    'group' => $scripArr[$i]['group'],
+                    'listing_date' => date('Y-m-d',strtotime($scripArr[$i]['listing_date'])),
+                    // 'group' => $scripArr[$i]['group'],
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now()
                                  

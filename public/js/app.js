@@ -1911,7 +1911,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -37811,7 +37810,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h2", { staticClass: "text-center" }, [_vm._v("Products List")]),
+    _c("h2", { staticClass: "text-center" }, [_vm._v("Scrip List")]),
     _vm._v(" "),
     _c("table", { staticClass: "table" }, [
       _vm._m(0),
@@ -37824,13 +37823,11 @@ var render = function() {
             _vm._v(" "),
             _c("td", [_vm._v(_vm._s(scrip.symbol))]),
             _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(scrip.series))]),
-            _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(scrip.bse_code))]),
+            _c("td", [_vm._v(_vm._s(scrip.name))]),
             _vm._v(" "),
             _c("td", [_vm._v(_vm._s(scrip.isin_no))]),
             _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(scrip.group))]),
+            _c("td", [_vm._v(_vm._s(scrip.listing_date))]),
             _vm._v(" "),
             _vm._m(1, true)
           ])
@@ -37851,13 +37848,11 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Symbol")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Series")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Bse Code")]),
+        _c("th", [_vm._v("Name")]),
         _vm._v(" "),
         _c("th", [_vm._v("ISIN No")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Group")])
+        _c("th", [_vm._v("Listing Date")])
       ])
     ])
   },
