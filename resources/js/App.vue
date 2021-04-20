@@ -5,6 +5,7 @@
                 <div class="navbar-nav">
                     <router-link to="/" class="nav-item nav-link">Scrip List</router-link>
                     <router-link to="/setup" class="nav-item nav-link">Setup</router-link>
+                    <router-link to="/setupIndustry" class="nav-item nav-link">Setup Industry</router-link>
                     <!-- <router-link to="/create" class="nav-item nav-link">Create Product</router-link> -->
                 </div>
             </div>

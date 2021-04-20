@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ScripController;
+use App\Http\Controllers\IndustryController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,8 +20,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::middleware('api')->group(function () {
-    Route::resource('scrips', ScripController::class);
+    Route::post('scrips', [ScripController::class, 'getAllScrips']);
+    Route::get('groups', [ScripController::class, 'getGroups']);
+
+    // Route::resource('scrips', ScripController::class);
     // Route::resource('setup', ScripController::class)->only(['setup']);
 });
 
 Route::get('setup', [ScripController::class, 'setup']);
+Route::get('setupIndustry', [IndustryController::class, 'setup']);
+Route::get('industries', [IndustryController::class, 'index']);

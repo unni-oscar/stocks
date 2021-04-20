@@ -26,4 +26,8 @@ class Scrip extends Model
         return Carbon::parse($value)->format('d-m-Y');
     }
 
+    public function industry()
+    {
+        return $this->belongsTo(Industry::class);
+    }
 }

@@ -20,9 +20,12 @@ class CreateScripsTable extends Migration
             $table->string('series')->nullable();
             $table->integer('bse_code')->nullable();
             $table->string('isin_no');
-            $table->date('listing_date');
+            $table->date('listing_date')->nullable();
             $table->string('group')->nullable();
+            $table->unsignedBigInteger("industry_id")->nullable();
             $table->timestamps();
+            $table->foreign('industry_id')->references('id')->on('industries');
+            
         });
     }
 
