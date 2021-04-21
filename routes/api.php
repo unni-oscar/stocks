@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ScripController;
 use App\Http\Controllers\IndustryController;
+use App\Http\Controllers\BhavcopyController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,6 +24,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::middleware('api')->group(function () {
     Route::post('scrips', [ScripController::class, 'getAllScrips']);
     Route::get('groups', [ScripController::class, 'getGroups']);
+    Route::get('getbhavcopy', [BhavcopyController::class, 'addBhavcopy']);
+    
+    // getbhavcopy
 
     // Route::resource('scrips', ScripController::class);
     // Route::resource('setup', ScripController::class)->only(['setup']);

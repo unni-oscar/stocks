@@ -30,4 +30,8 @@ class Scrip extends Model
     {
         return $this->belongsTo(Industry::class);
     }
+    public function bhavcopy()
+    {
+        return $this->hasMany(Bhavcopy::class);
+    }
 }

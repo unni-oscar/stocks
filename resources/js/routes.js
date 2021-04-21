@@ -1,6 +1,7 @@
 import AllScrip from './components/AllScrip.vue';
 import Setup from './components/Setup.vue';
 import SetupIndustry from './components/SetupIndustry.vue';
+import Bhavcopy from './components/Bhavcopy.vue';
 // import CreateProduct from './components/CreateProduct.vue';
 // import EditProduct from './components/EditProduct.vue';
  
@@ -20,6 +21,12 @@ export const routes = [
         path: '/setupIndustry',
         component: SetupIndustry
     },
+    {
+        name: 'getbhavcopy',
+        path: '/getbhavcopy',
+        component: Bhavcopy
+    },
+    
     // {
     //     name: 'create',
     //     path: '/create',

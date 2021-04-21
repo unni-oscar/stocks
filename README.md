@@ -65,3 +65,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## ReEferences
 
 https://www.positronx.io/create-laravel-vue-js-crud-single-page-application/
+
+List of Scrips:
+https://www.bsesme.com/corpoaratefilings/ScripsList.aspx
+
+Datatable
+https://www.positronx.io/create-datatables-in-laravel-vue-js-application/
