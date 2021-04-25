@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ScripController;
 use App\Http\Controllers\IndustryController;
 use App\Http\Controllers\BhavcopyController;
+use App\Http\Controllers\SectorController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +26,17 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::middleware('api')->group(function () {
     Route::post('scrips', [ScripController::class, 'getAllScrips']);
     Route::get('groups', [ScripController::class, 'getGroups']);
-    Route::get('getbhavcopy', [BhavcopyController::class, 'addBhavcopy']);
+    Route::get('setMasterFile', [IndustryController::class, 'setScripMaster']);
+
+    Route::get('sectors', [SectorController::class, 'index']);
+    Route::get('setSectors', [SectorController::class, 'setSectors']);
+
+    Route::get('industries', [IndustryController::class, 'index']);
+    Route::get('setIndustries', [IndustryController::class, 'setIndustries']);
+
+    Route::get('industriesForSector/{id}', [IndustryController::class, 'getIndustriesForSector']);
+
+    
     
     // getbhavcopy
 
@@ -34,4 +46,3 @@ Route::middleware('api')->group(function () {
 
 Route::get('setup', [ScripController::class, 'setup']);
 Route::get('setupIndustry', [IndustryController::class, 'setup']);
-Route::get('industries', [IndustryController::class, 'index']);

@@ -2,6 +2,9 @@ import AllScrip from './components/AllScrip.vue';
 import Setup from './components/Setup.vue';
 import SetupIndustry from './components/SetupIndustry.vue';
 import Bhavcopy from './components/Bhavcopy.vue';
+import Master from './components/Master.vue';
+import Sectors from './components/Sectors.vue';
+import Industries from './components/Industries.vue';
 // import CreateProduct from './components/CreateProduct.vue';
 // import EditProduct from './components/EditProduct.vue';
  
@@ -26,7 +29,21 @@ export const routes = [
         path: '/getbhavcopy',
         component: Bhavcopy
     },
-    
+    {
+        name: 'setMasterFile',
+        path: '/setMasterFile',
+        component: Master
+    },
+    {
+        name: 'sectors',
+        path: '/sectors',
+        component: Sectors
+    },
+    {
+        name: 'industries',
+        path: '/industries',
+        component: Industries
+    }
     // {
     //     name: 'create',
     //     path: '/create',

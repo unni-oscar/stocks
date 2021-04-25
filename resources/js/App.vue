@@ -3,6 +3,9 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
+                     <router-link to="/setMasterFile" class="nav-item nav-link">Create Master</router-link>
+                     <router-link to="/sectors" class="nav-item nav-link">Sectors</router-link>
+                     <router-link to="/industries" class="nav-item nav-link">Industries</router-link>
                     <router-link to="/" class="nav-item nav-link">Scrip List</router-link>
                     <router-link to="/setup" class="nav-item nav-link">Setup</router-link>
                     <router-link to="/setupIndustry" class="nav-item nav-link">Setup Industry</router-link>

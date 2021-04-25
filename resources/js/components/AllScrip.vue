@@ -2,28 +2,31 @@
     <div>
         <h2 class="text-center">Scrip List </h2>
         <div class="col-12">
-        <div class="col-3"> Industry
-            <select name="industry" @change="getScrips($event)" class="form-control" v-model="industry">       
-            <option value="-1">All</option>
-            <option v-for="industry in industries" :key="industry.id" :value='industry.id'>{{industry.name}}</option>
-           
-            </select>
+            <div class="col-3"> Sector
+                <select name="sector" @change="getIndustriesForSector($event)" class="form-control" v-model="sector">       
+                <option value="-1">All</option>
+                <option v-for="sector in sectors" :key="sector.id" :value='sector.id'>{{sector.name}}</option>
+            
+                </select>
+            </div>
+            <div class="col-3"> Industry
+                <select name="industry" @change="getScrips($event)" class="form-control" v-model="industry">       
+                <option value="-1">All</option>
+                <option v-for="industry in industries" :key="industry.id" :value='industry.id'>{{industry.name}}</option>
+            
+                </select>
+            </div>
+       
         </div>
-        <div class="col-3"> Group
-            <select name="group" @change="getScrips($event)" class="form-control" v-model="group">       
-            <option value="-1">All</option>
-            <option v-for="grp in groups" :key="grp.group" :value='grp.group'>{{grp.group}}</option>
-           
-            </select>
-        </div>
-        </div>
+        <div>Total count {{scrips.length }}</div>
         <table class="table">
             <thead>
             <tr>
                 <th>Symbol</th>
                 <th>Name</th>               
                 <th>ISIN No</th>
-                <th>Group</th>
+                <th>Face Value</th>
+                <th>Sector</th>
                 <th>Industry</th>
                 
                 <!-- <th>Actions</th> -->
@@ -35,8 +38,9 @@
                 <td>{{ scrip.name }}</td>
               
                 <td>{{ scrip.isin_no }}</td>
-                 <td>{{ scrip.group }}</td>
-                <td>{{ scrip.industry.name }}</td>
+                 <td>{{ scrip.faceValue }}</td>
+                  <td>{{ scrip.industry_sector.sector.name }}</td>
+                <td>{{ scrip.industry_sector.industry.name }}</td>
                 <td>
                     <div class="btn-group" role="group">
                         <!-- <router-link :to="{name: 'edit', params: { id: product.id }}" class="btn btn-success">Edit</router-link> -->
@@ -51,41 +55,58 @@
  
 <script>
     export default {
-        data() {
+        data: function () {
             return {
                 scrips: [],
-                groups: [],
+                industries: [],
+                sectors: [],
                 industry: '-1',
-                group: '-1',
-                industries: []
+                sector: '-1',
+                
             }
         },
         created() {
             this.getIndustry();
-            this.getGroups();
+            this.getSectors();
             this.getScrips();
         },
         methods: {
-            getGroups(){
+            getIndustriesForSector($e){
+                if(this.sector != -1) {
+                    this.axios
+                    .get('http://localhost:8000/api/industriesForSector/'+this.sector)
+                    .then(response => {
+                        this.industries = response.data;
+                        this.industry = -1
+                        this.getScrips()
+                    });
+
+                } else {
+                    this.getScrips()
+                    this.getIndustry()
+                }
+                
+            },
+            getSectors(){
                 this.axios
-                .get('http://localhost:8000/api/groups')
+                .get('http://localhost:8000/api/sectors')
                 .then(response => {
-                    this.groups = response.data;
+                    this.sectors = response.data;
                 });
             },
             getIndustry() {
                 this.axios
                 .get('http://localhost:8000/api/industries')
                 .then(response => {
-                    console.log(response.data);
                     this.industries = response.data;
+                    this.industry = -1
                 });
             },
             getScrips:function(){
                  this.axios
                 .post('http://localhost:8000/api/scrips/', {
                     'industry' : this.industry,
-                    'group' : this.group
+                     'sector' : this.sector
                 })
                 .then(response => {
                     console.log(response.data);

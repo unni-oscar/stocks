@@ -6,25 +6,25 @@ use Illuminate\Http\Request;
 use App\Models\Bhavcopy;
 use App\Models\Scrip;
 use Carbon\Carbon;
+use Goutte\Client;
+
+
 class BhavcopyController extends Controller
 {
     function addBhavcopy() {
 
-        include(app_path() . '/functions/simple_html_dom.php');
-        $html = file_get_html('http://www.google.com/');
-        $title = $html->find('title', 0);
-        $image = $html->find('img', 0);
-
-        // echo $title->plaintext."<br>\n";
-        // echo $image->src;
-
-        return $image->src;
+        // $client = new Client();
+        // $crawler = $client->request('GET', 'https://www.symfony.com/blog/');
+        // $crawler->filter('h2 > a')->each(function ($node) {
+        //     return  $node->text()."\n";
+        // });
+        // return '$crawler';
         //--------------------------
         $bhavDate = '20042021';
         $file = 'https://archives.nseindia.com/products/content/sec_bhavdata_full_'.$bhavDate.'.csv';
         // TODO: Check the data exists for this selected data
         // $checkBhavData = Bhavcopy::get
-        // $exitingBhavcopyData = Bhavcopy::with('industry')->orderBy('name')->where($condition)->get();
+        // $exitingBhavcopyData = Bhavcopy::where(['']])->get();
 
         $collection = Scrip::all();
         $data = [];

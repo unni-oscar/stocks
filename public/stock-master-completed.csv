@@ -1,0 +1,119 @@
+name,symbol,isin,industry,sector,listingDate,series,status,sector_pe,symbol_pe,trading_status,issuedCap,faceValue
+"Bajaj Finance Limited",BAJFINANCE,INE296A01024,NBFC,"NIFTY FINANCIAL SERVICES                          ",01-Apr-2003,EQ,Listed,24.33,73.23,Active,602549839,2
+"ABB India Limited",ABB,INE117A01022,"POWER EQUIPMENT","NIFTY INFRASTRUCTURE                              ",08-Feb-1995,EQ,Listed,32.87,134.86,Active,211908375,2
+"Amara Raja Batteries Limited",AMARAJABAT,INE885A01032,"BATTERIES - AUTOMOBILE","NIFTY 500                                         ",05-Sep-2003,EQ,Listed,34.87,23.01,Active,170812500,1
+"Housing Development Finance Corporation Limited",HDFC,INE001A01036,"HOUSING FINANCE","NIFTY FINANCIAL SERVICES                          ",23-Oct-1996,EQ,Listed,24.33,40.52,Active,1803941533,2
+"Ansal Properties & Infrastructure Limited",ANSALAPI,INE436A01026,"RESIDENTIAL/COMMERCIAL/SEZ Project","NIFTY REALTY                                      ",27-Jan-2006,EQ,Listed,0,0,Active,157403576,5
+"Bombay Dyeing & Mfg Company Limited",BOMDYEING,INE032A01023,"MAN MADE FIBRES/BLENDED","NIFTY 500                                         ",26-Apr-1995,EQ,Listed,34.87,0,Active,206534900,2
+"Asian Hotels (North) Limited",ASIANHOTNR,INE363A01022,"HOTELS RESTAURANTS RESORTS","NIFTY SERVICES SECTOR                             ",07-Apr-2010,EQ,Listed,29.1,0,Active,19453229,10
+"Atul Limited",ATUL,INE100A01010,"CHEMICALS - SPECIALITY","NIFTY 500                                         ",06-May-1998,EQ,Listed,34.87,32.47,Active,29587051,10
+"Bajaj Electricals Limited",BAJAJELEC,INE193E01025,"HOME APPLIANCES HOUSEWARES","NIFTY INDIA CONSUMPTION                           ",02-Nov-2007,EQ,Listed,153.05,100.52,Active,114536619,2
+"Bajaj Hindusthan Sugar Limited",BAJAJHIND,INE306A01021,SUGAR,"NIFTY FMCG                                        ",10-May-1995,EQ,Listed,42.15,0,Active,1133559942,1
+"FORCE MOTORS LTD",FORCEMOT,INE451A01017,"PASSENGER/UTILITY VEHICLES",NA,03-Nov-1994,EQ,"Permitted to trade",NA,NA,Active,13176262,10
+"Balrampur Chini Mills Limited",BALRAMCHIN,INE119A01028,SUGAR,"NIFTY FMCG                                        ",08-Feb-1995,EQ,Listed,42.15,11.13,Active,210000000,1
+"Banco Products (I) Limited",BANCOINDIA,INE213C01025,"AUTO ANCILLARIES","NIFTY AUTO                                        ",22-Dec-2006,EQ,Listed,696.46,16.06,Active,71518650,2
+"Century Textiles & Industries Limited",CENTURYTEX,INE055A01016,"PAPER AND PAPER PRODUCTS","NIFTY 500                                         ",27-Jun-2003,EQ,Listed,34.87,38.58,Active,111695680,10
+"Bannari Amman Sugars Limited",BANARISUG,INE459A01010,SUGAR,"NIFTY FMCG                                        ",28-May-2003,EQ,Listed,42.15,19.58,Active,12539700,10
+"BASF India Limited",BASF,INE373A01013,"CHEMICALS - SPECIALITY","NIFTY 500                                         ",17-May-1995,EQ,Listed,34.87,16.52,Active,43285640,10
+"Bata India Limited",BATAINDIA,INE176A01028,"LEATHER AND LEATHER PRODUCTS","NIFTY 500                                         ",18-Jun-2003,EQ,Listed,34.87,0,Active,128527540,5
+"BEML Limited",BEML,INE258A01016,"INDUSTRIAL EQUIPMENT","NIFTY 500                                         ",05-Nov-2003,EQ,Listed,34.87,47.53,Active,41644500,10
+"Bharat Electronics Limited",BEL,INE263A01024,DEFENSE,"NIFTY 500                                         ",19-Jul-2000,EQ,Listed,34.87,17.21,Active,2436592943,1
+"Bhansali Engineering Polymers Limited",BEPL,INE922A01025,"CHEMICALS - SPECIALITY","NIFTY 500                                         ",21-Mar-2005,EQ,Listed,34.87,7.94,Active,165905640,1
+"Tata Steel Bsl Limited",TATASTLBSL,INE824B01021,STEEL,"NIFTY METAL",21-Nov-2003,EQ,Listed,30.21,11.03,Active,1093439768,2
+"Birla Cable Limited",BIRLACABLE,INE800A01015,"TELECOM - CABLES","NIFTY 500                                         ",06-Dec-1995,EQ,Listed,34.87,84.17,Active,30000000,10
+"Blue Star Limited",BLUESTARCO,INE472A01039,"AIR CONDITIONER","NIFTY INDIA CONSUMPTION                           ",15-Jun-2000,EQ,Listed,153.05,235.02,Active,96313888,2
+"BPL Limited",BPL,INE110A01019,"CONSUMER ELECTRONICS","NIFTY INDIA CONSUMPTION                           ",14-Jun-1995,EQ,Listed,153.05,0,Active,48884818,10
+"Oriental Aromatics Limited",OAL,INE959C01023,"CHEMICALS - SPECIALITY",NA,11-Jul-2019,EQ,Listed,NA,NA,Active,33653576,5
+"Century Extrusions Limited",CENTEXT,INE281A01026,ALUMINIUM,"NIFTY METAL                                       ",20-Jul-2004,EQ,Listed,30.21,22.71,Active,80000000,1
+"CESC Limited",CESC,INE486A01013,POWER,"NIFTY INFRASTRUCTURE                              ",08-Feb-1995,EQ,Listed,32.87,9.84,Active,132557043,10
+"Chambal Fertilizers & Chemicals Limited",CHAMBLFERT,INE085A01013,FERTILISERS,"NIFTY 500                                         ",14-Jun-1995,EQ,Listed,34.87,6.55,Active,416206072,10
+"Exide Industries Limited",EXIDEIND,INE302A01020,"BATTERIES - AUTOMOBILE","NIFTY 500                                         ",17-Jun-2003,EQ,Listed,34.87,21.56,Active,850000000,1
+"Cipla Limited",CIPLA,INE059A01026,PHARMACEUTICALS,"NIFTY PHARMA                                      ",08-Feb-1995,EQ,Listed,35.38,28.7,Active,806460446,2
+"DIC India Limited",DICIND,INE303A01010,"PRINTING INKS","NIFTY 500                                         ",30-Aug-1995,EQ,Listed,34.87,4.05,Active,9178977,10
+"CRISIL Limited",CRISIL,INE007A01025,"OTHER FINANCIAL SERVICES","NIFTY 500                                         ",28-Jun-1995,EQ,Listed,34.87,50.66,Active,72681415,1
+"CG Power and Industrial Solutions Limited",CGPOWER,INE067A01029,"POWER EQUIPMENT","NIFTY 500                                         ",01-Mar-1995,EQ,Listed,34.87,0,Active,1337998029,2
+"Dabur India Limited",DABUR,INE016A01026,"PERSONAL CARE","NIFTY FMCG                                        ",28-Apr-1999,EQ,Listed,42.15,75.15,Active,1767425349,1
+"Dalmia Bharat Sugar and Industries Limited",DALMIASUG,INE495A01022,SUGAR,"NIFTY FMCG                                        ",17-Jan-1996,EQ,Listed,42.15,6.47,Active,80939303,2
+"Arvind Limited",ARVIND,INE034A01011,"FABRICS AND GARMENTS","NIFTY 500                                         ",08-Feb-1995,EQ,Listed,34.87,24,Active,258924069,10
+"Ballarpur Industries Limited",BALLARPUR,INE294A01037,"PAPER AND PAPER PRODUCTS","NIFTY 500                                         ",31-Mar-2008,BZ,Listed,34.87,0,Active,1293455756,2
+"Bharat Heavy Electricals Limited",BHEL,INE257A01026,"POWER EQUIPMENT","NIFTY 500                                         ",11-Nov-2003,EQ,Listed,34.87,0,Active,3482063355,2
+"Hindustan Petroleum Corporation Limited",HINDPETRO,INE094A01015,REFINERIES/MARKETING,"NIFTY 500                                         ",17-Jun-1998,EQ,Listed,34.87,4.43,Active,1455845587,10
+"IFCI Limited",IFCI,INE039A01010,"FINANCIAL INSTITUTION","NIFTY FINANCIAL SERVICES                          ",26-Apr-1995,EQ,Listed,24.33,0,Active,1895993092,10
+"Mahanagar Telephone Nigam Limited",MTNL,INE153A01019,"TELECOM - SERVICES","NIFTY 500                                         ",17-Feb-1999,EQ,Listed,34.87,0,Active,275621860,10
+"Mangalore Refinery and Petrochemicals Limited",MRPL,INE103A01014,REFINERIES/MARKETING,"NIFTY 500                                         ",07-Jan-2005,EQ,Listed,34.87,0,Active,1752598777,10
+"Chennai Petroleum Corporation Limited",CHENNPETRO,INE178A01016,REFINERIES/MARKETING,"NIFTY 500                                         ",07-Jun-2000,EQ,Listed,34.87,0,Active,148911400,10
+"Reliance Capital Limited",RELCAPITAL,INE013A01015,"INVESTMENT COMPANIES","NIFTY FINANCIAL SERVICES                          ",29-Nov-1995,EQ,Listed,24.33,0,Active,252708902,10
+"State Bank of India",SBIN,INE062A01020,"PUBLIC SECTOR BANK","NIFTY BANK                                        ",01-Mar-1995,EQ,Listed,24.05,16.85,Active,8924611534,1
+"Steel Authority of India Limited",SAIL,INE114A01011,STEEL,"NIFTY METAL                                       ",06-Jul-1995,EQ,Listed,30.21,11.76,Active,4130525289,10
+"Titan Company Limited",TITAN,INE280A01028,"GEMS JEWELLERY AND WATCHES","NIFTY 500                                         ",24-Sep-2004,EQ,Listed,34.87,178.53,Active,887786160,1
+"IDBI Bank Limited",IDBI,INE008A01015,"PRIVATE SECTOR BANK","NIFTY BANK                                        ",20-Sep-1995,EQ,Listed,24.05,37.04,Active,10752402175,10
+"DCW Limited",DCW,INE500A01029,"CHEMICALS - INORGANIC","NIFTY 500                                         ",25-May-1995,EQ,Listed,34.87,0,Active,261030371,2
+"Dhampur Sugar Mills Limited",DHAMPURSUG,INE041A01016,SUGAR,"NIFTY FMCG                                        ",29-Mar-1995,EQ,Listed,42.15,5.37,Active,66387590,10
+"Dr. Reddy's Laboratories Limited",DRREDDY,INE089A01023,PHARMACEUTICALS,"NIFTY PHARMA                                      ",30-May-2003,EQ,Listed,35.38,34.75,Active,166292115,5
+"EID Parry India Limited",EIDPARRY,INE126A01031,"AGRICULTURAL PRODUCTS","NIFTY FMCG                                        ",10-May-1995,EQ,Listed,42.15,7.29,Active,177102391,1
+"Procter & Gamble Health Limited",PGHL,INE199A01012,PHARMACEUTICALS,NA,24-Apr-1996,EQ,Listed,NA,NA,Active,16599382,10
+"Electrosteel Castings Limited",ELECTCAST,INE086A01029,CASTINGS/FORGINGS,"NIFTY METAL                                       ",20-Jun-2003,EQ,Listed,30.21,38.1,Active,432954709,1
+"Esab India Limited",ESABINDIA,INE284A01012,"OTHER INDUSTRIAL PRODUCTS","NIFTY INFRASTRUCTURE                              ",01-Nov-1995,EQ,Listed,32.87,48.64,Active,15393020,10
+"EPL Limited",EPL,INE255A01020,PACKAGING,NA,11-Feb-2002,EQ,Listed,NA,NA,Active,315622727,2
+"Ester Industries Limited",ESTER,INE778B01029,PACKAGING,"NIFTY 500                                         ",20-Jun-2011,EQ,Listed,34.87,7.03,Active,83393759,5
+"Finolex Cables Limited",FINCABLES,INE235A01022,"CABLES - ELECTRICALS","NIFTY 500                                         ",15-Feb-1995,EQ,Listed,34.87,18.15,Active,152939345,2
+"UFLEX Limited",UFLEX,INE516A01017,PACKAGING,"NIFTY 500                                         ",23-Aug-1995,EQ,Listed,34.87,12.92,Active,72211486,10
+"Foseco India Limited",FOSECOIND,INE519A01011,"CHEMICALS - SPECIALITY","NIFTY 500                                         ",05-May-2003,EQ,Listed,34.87,50.13,Active,6386459,10
+"Golden Tobacco Limited",GOLDENTOBC,INE973A01010,"CIGARETTES & RELATED PRODUCTS","NIFTY FMCG                                        ",08-Feb-1995,EQ,Listed,42.15,0,Active,17608802,10
+"GTL Limited",GTL,INE043A01012,"TELECOM - SERVICES","NIFTY INFRASTRUCTURE                              ",29-Mar-1995,EQ,Listed,32.87,0,Active,157296781,10
+"Godfrey Phillips India Limited",GODFRYPHLP,INE260B01028,"CIGARETTES & RELATED PRODUCTS","NIFTY 500                                         ",24-Jul-1996,EQ,Listed,34.87,14.16,Active,51993920,2
+"Godrej Industries Limited",GODREJIND,INE233A01035,"ANIMAL FEED","NIFTY 500                                         ",25-Feb-2003,EQ,Listed,34.87,0,Active,336525098,1
+"Kansai Nerolac Paints Limited",KANSAINER,INE531A01024,PAINTS,"NIFTY 500                                         ",15-Sep-2003,EQ,Listed,34.87,73.76,Active,538919720,1
+"Goodyear India Limited",GOODYEAR,INE533A01012,"TYRES & ALLIED",NA,28-Dec-1994,EQ,"Permitted to trade",NA,NA,Active,23066507,10
+"GHCL Limited",GHCL,INE539A01019,"CHEMICALS - INORGANIC","NIFTY 500                                         ",31-Jul-2003,EQ,Listed,34.87,7.45,Active,95013286,10
+"GFL Limited",GFLLIMITED,INE538A01037,"FILM PRODUCTION DISTRIBUTION & EXHIBITION",NA,25-May-1995,EQ,Listed,NA,NA,Active,109850000,1
+"Gujarat Lease Financing Limited",GLFL,INE540A01017,"OTHER FINANCIAL SERVICES","NIFTY FINANCIAL SERVICES                          ",08-Feb-1995,EQ,Listed,24.33,0,Active,27125767,10
+"HCL Infosystems Limited",HCL-INSYS,INE236A01020,"IT ENABLED SERVICES - HARDWARE","NIFTY IT                                          ",01-Jan-1997,EQ,Listed,27.88,0,Active,329209928,2
+"HDFC Bank Limited",HDFCBANK,INE040A01034,"PRIVATE SECTOR BANK","NIFTY BANK                                        ",08-Nov-1995,EQ,Listed,24.05,23.06,Active,5512776482,1
+"Hero MotoCorp Limited",HEROMOTOCO,INE158A01026,"MOTOR CYCLES/SCOOTERS","NIFTY AUTO                                        ",11-Apr-2003,EQ,Listed,696.46,20.46,Active,199780217,2
+"HFCL Limited",HFCL,INE548A01028,"TELECOM - INFRASTRUCTURE","NIFTY 500                                         ",09-Mar-2011,EQ,Listed,34.87,21.79,Active,1284377194,1
+"Himadri Speciality Chemical Limited",HSCL,INE019C01026,"CHEMICALS - SPECIALITY","NIFTY 500                                         ",02-Mar-2007,EQ,Listed,34.87,42.81,Active,418965278,1
+"Hindustan Construction Company Limited",HCC,INE549A01026,ENGINEERING-DESIGNING-CONSTRUCTION,"NIFTY INFRASTRUCTURE                              ",01-Apr-2003,EQ,Listed,32.87,0,Active,1513028244,1
+"Hindustan Oil Exploration Company Limited",HINDOILEXP,INE345A01011,"OIL EXPLORATION","NIFTY 500                                         ",23-Sep-2003,EQ,Listed,34.87,25.16,Active,132243289,10
+"HSIL Limited",HSIL,INE415A01038,PACKAGING,"NIFTY 500                                         ",31-May-2000,EQ,Listed,34.87,16.22,Active,64697381,2
+"Hindustan Zinc Limited",HINDZINC,INE267A01025,ZINC,"NIFTY METAL                                       ",21-Nov-2006,EQ,Listed,30.21,17.48,Active,4225319000,2
+"NXTDIGITAL LIMITED",NXTDIGITAL,INE353A01023,"TV BROADCASTING & SOFTWARE PRODUCTION",NA,24-Apr-2007,EQ,Listed,NA,NA,Active,24051158,10
+"HMT Limited",HMT,INE262A01018,"INDUSTRIAL EQUIPMENT","NIFTY AUTO                                        ",29-Aug-2003,BZ,Listed,696.46,4.93,Active,468170740,10
+"HLV LIMITED",HLVLTD,INE102A01024,"HOTELS RESTAURANTS RESORTS",NA,19-Jul-1995,EQ,Listed,NA,NA,Active,630551766,2
+"IG Petrochemicals Limited",IGPL,INE204A01010,"CHEMICALS - ORGANIC","NIFTY 500                                         ",29-Jan-2007,EQ,Listed,34.87,14.87,Active,30794850,10
+"India Glycols Limited",INDIAGLYCO,INE560A01015,"CHEMICALS - ORGANIC","NIFTY 500                                         ",01-Jul-2005,EQ,Listed,34.87,13.5,Active,30961500,10
+"Indo Rama Synthetics (India) Limited",INDORAMA,INE156A01020,"MAN MADE FIBRES/BLENDED","NIFTY 500                                         ",20-Jun-2003,EQ,Listed,34.87,0,Active,261113151,10
+"Infosys Limited",INFY,INE009A01021,"COMPUTERS - SOFTWARE","NIFTY IT                                          ",08-Feb-1995,EQ,Listed,27.88,32.16,Active,4260660846,5
+"Ingersoll Rand (India) Limited",INGERRAND,INE177A01018,"COMPRESSORS / PUMPS","NIFTY INFRASTRUCTURE                              ",15-Apr-1999,EQ,Listed,32.87,31.39,Active,31568000,10
+"Agro Tech Foods Limited",ATFL,INE209A01019,"EDIBLE OIL","NIFTY FMCG                                        ",06-Dec-2002,EQ,Listed,42.15,60.7,Active,24369264,10
+"Jain Irrigation Systems Limited",JISLJALEQS,INE175A01038,"PLASTIC PRODUCTS","NIFTY 500                                         ",13-Aug-2001,EQ,Listed,34.87,0,Active,496366053,2
+"Jindal Poly Films Limited",JINDALPOLY,INE197D01010,PACKAGING,"NIFTY 500                                         ",21-Jan-2002,EQ,Listed,34.87,4.54,Active,43786413,10
+"JSW Steel Limited",JSWSTEEL,INE019A01038,STEEL,"NIFTY METAL                                       ",23-Mar-2005,EQ,Listed,30.21,32.24,Active,2417220440,1
+"Kajaria Ceramics Limited",KAJARIACER,INE217B01036,"FURNITURE HOME FURNISHING FLOORING","NIFTY 500                                         ",01-Jun-2004,EQ,Listed,34.87,55.97,Active,159081000,1
+"Kakatiya Cement Sugar & Industries Limited",KAKATCEM,INE437B01014,CEMENT,"NIFTY 500                                         ",13-Dec-1995,EQ,Listed,34.87,0,Active,7773858,10
+"Kalyani Steels Limited",KSL,INE907A01026,STEEL,"NIFTY METAL                                       ",19-May-2010,EQ,Listed,30.21,11,Active,43653060,5
+"Whirlpool of India Limited",WHIRLPOOL,INE716A01013,"HOME APPLIANCES HOUSEWARES","NIFTY INDIA CONSUMPTION                           ",06-Apr-2010,EQ,Listed,153.05,91.26,Active,126871830,10
+"Kirloskar Brothers Limited",KIRLOSBROS,INE732A01036,"COMPRESSORS / PUMPS","NIFTY INFRASTRUCTURE                              ",20-Apr-2010,EQ,Listed,32.87,24.54,Active,79408926,2
+"Kirloskar Industries Limited",KIRLOSIND,INE250A01039,CASTINGS/FORGINGS,"NIFTY 500                                         ",24-Jun-2010,EQ,Listed,34.87,0,Active,9708619,10
+"Kirloskar Ferrous Industries Ltd",KIRLFER,INE884B01025,"PIG IRON",NA,13-Nov-2019,EQ,"Permitted to trade",NA,NA,Active,137657041,5
+"Kotak Mahindra Bank Limited",KOTAKBANK,INE237A01028,"PRIVATE SECTOR BANK","NIFTY BANK                                        ",20-Dec-1995,EQ,Listed,24.05,51.46,Active,1981835668,5
+"Ksb Limited",KSB,INE999A01015,"COMPRESSORS / PUMPS","NIFTY INFRASTRUCTURE",08-Feb-1995,EQ,Listed,32.87,42.77,Active,34807844,10
+"LG Balakrishnan & Bros Limited",LGBBROSLTD,INE337A01034,"AUTO ANCILLARIES","NIFTY METAL                                       ",30-Mar-2010,EQ,Listed,30.21,8.42,Active,31392416,10
+"Trent Limited",TRENT,INE849A01020,"SPECIALITY RETAIL","NIFTY 500                                         ",07-Jun-2004,EQ,Listed,34.87,0,Active,355487461,1
+"Lakshmi Machine Works Limited",LAXMIMACH,INE269B01029,"TEXTILE MACHINERY","NIFTY INFRASTRUCTURE                              ",29-Mar-1995,EQ,Listed,32.87,223.46,Active,10683000,10
+"LIC Housing Finance Limited",LICHSGFIN,INE115A01026,"HOUSING FINANCE","NIFTY FINANCIAL SERVICES                          ",29-Jul-1998,EQ,Listed,24.33,6.94,Active,504663000,2
+"Lupin Limited",LUPIN,INE326A01037,PHARMACEUTICALS,"NIFTY PHARMA                                      ",10-Sep-2001,EQ,Listed,35.38,41.37,Active,453680133,2
+"Lyka Labs Limited",LYKALABS,INE933A01014,PHARMACEUTICALS,"NIFTY PHARMA                                      ",12-Jan-2000,BE,Listed,35.38,0,Active,28690000,10
+"The Ramco Cements Limited",RAMCOCEM,INE331A01037,CEMENT,"NIFTY COMMODITIES                                 ",09-Apr-1997,EQ,Listed,22.69,33.38,Active,235889945,1
+"Maharashtra Seamless Limited",MAHSEAMLES,INE271B01025,"IRON & STEEL PRODUCTS","NIFTY METAL                                       ",25-Aug-2004,EQ,Listed,30.21,0,Active,66999626,5
+"Maharashtra Scooters Limited",MAHSCOOTER,INE288A01013,"INVESTMENT COMPANIES","NIFTY AUTO                                        ",08-Feb-1995,EQ,Listed,696.46,33.84,Active,11428568,10
+"Manali Petrochemicals Limited",MANALIPETC,INE201A01024,PETROCHEMICALS,"NIFTY 500                                         ",06-Dec-2006,EQ,Listed,34.87,10.39,Active,171999229,5
+"Max Financial Services Limited",MFSL,INE180A01020,"LIFE INSURANCE","NIFTY FINANCIAL SERVICES                          ",17-May-2000,EQ,Listed,24.33,328.48,Active,345090302,2
+"MIRC Electronics Limited",MIRCELECTR,INE831A01028,"CONSUMER ELECTRONICS","NIFTY INDIA CONSUMPTION                           ",24-May-2004,BE,Listed,153.05,0,Active,230952619,1
+"Century Enka Limited",CENTENKA,INE485A01015,"MAN MADE FIBRES/BLENDED","NIFTY 500                                         ",10-May-1995,EQ,Listed,34.87,12.15,Active,21850589,10
+"SPICEJET LTD",SPICEJET,INE285B01017,AIRLINES,NA,10-May-1995,EQ,"Permitted to trade",NA,NA,Active,599718356,10
+"Morepen Laboratories Limited",MOREPENLAB,INE083A01026,PHARMACEUTICALS,"NIFTY PHARMA                                      ",24-Nov-1999,EQ,Listed,35.38,21.22,Active,449826203,2
+"MRF Limited",MRF,INE883A01011,"TYRES & ALLIED","NIFTY AUTO                                        ",18-Sep-1996,EQ,Listed,696.46,20.99,Active,4241143,10
+"HeidelbergCement India Limited",HEIDELBERG,INE578A01017,CEMENT,"NIFTY COMMODITIES                                 ",15-Mar-1995,EQ,Listed,22.69,21.4,Active,226613116,10
+"NCC Limited",NCC,INE868B01028,ENGINEERING-DESIGNING-CONSTRUCTION,"NIFTY INFRASTRUCTURE                              ",14-Oct-2003,EQ,Listed,32.87,18.27,Active,609846588,2
+"Vedanta Limited",VEDL,INE205A01025,ALUMINIUM,"NIFTY 500                                         ",13-May-1998,EQ,Listed,34.87,0,Active,3717196639,1

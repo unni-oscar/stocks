@@ -71,3 +71,10 @@ https://www.bsesme.com/corpoaratefilings/ScripsList.aspx
 
 Datatable
 https://www.positronx.io/create-datatables-in-laravel-vue-js-application/
+
+Python
+https://pypi.org/project/jugaad-data/
+https://tradewithpython.com/download-end-of-day-stock-prices-for-national-stock-exchange-of-india-using-python
+
+## many to many
+https://cerwyn.medium.com/laravel-many-to-many-eloquent-orm-d22ecff81b72

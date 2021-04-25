@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Scrip;
+use App\Models\Sector;
 use App\Models\Industry;
+use App\Models\IndustrySector;
+
 use Carbon\Carbon;
 class ScripController extends Controller
 {
@@ -16,75 +19,116 @@ class ScripController extends Controller
         return Scrip::select('group')->distinct()->orderBy('group')->get();
     }
     public function getAllScrips(Request $request) {
-       
-
         $industry = $request->industry;
-        $group = $request->group;
+        $sector = $request->sector;
         $condition = [];
+        $ids = [];
+
+        if($sector != -1) {
+            $secObjs = Sector::find($sector);
+            $pivots =  $secObjs->Industries; 
+            foreach($pivots as $pi) {
+                if($industry != -1) {
+                    $ids[] = ($pi->id == $industry) ? $pi->pivot->id : '';
+                } else {
+                    $ids[] = $pi->pivot->id;
+                }
+            }
+        } else {
+
+            if($industry != -1) {
+                $indObjs = Industry::find($industry);
+                $pivots = $indObjs->sectors;
+                foreach($pivots as $pi) {                   
+                    $ids[] = $pi->pivot->id;                   
+                }                
+            }            
+        }
+
         if($industry != -1) 
             $condition = ['industry_id' => $industry ];
 
-        if($group != -1) 
-             $condition = ['group' => $group ];
+        if($sector != -1  && $industry != -1)
+            $condition = ['sector_id' => $sector, 'industry_id' => $industry  ];
 
-        if($group != -1  && $industry != -1)
-            $condition = ['group' => $group, 'industry_id' => $industry  ];
-
-            // return $condition;
-        $scrips = Scrip::with('industry')->orderBy('name')->where($condition)->get();
-        // $scrips->where('group', 'A');
-        // $scrips->listing_date->format('d/m/Y');
+            
+        if($sector != -1 || $industry != -1) {
+            $scrips = Scrip::whereIn('industry_sector_id',$ids)
+                ->orderBy('name')
+                ->with('industry_sector.sector', 'industry_sector.industry')
+                ->get();
+        } else {
+             $scrips = Scrip::orderBy('name')
+                ->with('industry_sector.sector', 'industry_sector.industry')
+                ->get();
+        }            
         return $scrips;      
     }
+
     public function setup()
     {       
         $collection = Scrip::all();
-        $Industries = Industry::all();
-        // return $Industries;
-        // $file = public_path('LDE_EQUITIES_MORE_THAN_5_YEARS.csv');
-        $file = public_path('equity.csv');
-        
+        $industries = Industry::all();
+        $sectors = Sector::all();
+        $file = public_path('stock-master-completed.csv');
         $scripArr = $this->csvToArray($file);
         $data = [];
 
         for ($i = 0; $i < count($scripArr); $i ++)
         {
-            $symbol =  $scripArr[$i]['isin_no'];
+            $symbol =  $scripArr[$i]['symbol'];
             $desired_object = $collection->filter(function($item) use ($symbol) {
-                return $item->isin_no == $symbol ;
+                return $item->symbol == $symbol ;
             });
 
             if(count($desired_object) == 0) {
-                $industryName =  trim($scripArr[$i]['Industry']);
-                if($industryName != " " && $industryName != "") {
-                    $scripIndustry = $Industries->filter(function($indus) use ($industryName) {
-                        return $indus->name == $industryName ;
-                    })->first();
-                }
-                
-                // return $scripIndustry->id;
-                // $f = ($scripIndustry->id > 0) ? $scripIndustry->id : '';
-                // try{
 
-                // } catch(error $e) {
-                //     return $e;
-                // }
+                $sectorName =  trim($scripArr[$i]['sector']);
+                $sectorName = ($sectorName == 'NA') ? 'Others' : $sectorName ;
+                $scripSector = $sectors->filter(function($sec) use ($sectorName) {
+                    return $sec->name == $sectorName ;
+                })->first();
+
+                if(!empty($scripSector) ) 
+                    $sectorId = $scripSector->id;
+                else 
+                    $sectorId = null;
+
+
+                $indName =  trim($scripArr[$i]['industry']);
+                $scripIndustry = $industries->filter(function($ind) use ($indName, $sectorId) {
+                    return (($ind->name == $indName) && ($ind->sector_id == $sectorId));
+                })->first();
+
+                if(!empty($scripIndustry) ) 
+                    $industryId = $scripIndustry->id;
+                else 
+                    $industryId = null;
+
+                /*** Adding Pivot table id (industry_sector)*/
+                $sectorName =  trim($scripArr[$i]['sector']);
+                $sectorName = ($sectorName == 'NA') ? 'Others' : $sectorName ;
+                $sector = Sector::where('name', '=', $sectorName)->first();
+                $indName =  trim($scripArr[$i]['industry']);
+                $industry = Industry::where('name', '=', $indName)->first();
+                $sectorIndustries = $sector->industries->find($industry->id);
+                                
                 $data[] = [
                     'symbol' => $scripArr[$i]['symbol'],
                     'name' => $scripArr[$i]['name'],
-                    // 'series' => $scripArr[$i]['series'],
-                    // 'bse_code' => $scripArr[$i]['bse_code'],
-                    'isin_no' => $scripArr[$i]['isin_no'],
-                    'industry_id' => $scripIndustry->id,
-                    // 'listing_date' => date('Y-m-d',strtotime($scripArr[$i]['listing_date'])),
-                    'group' => $scripArr[$i]['group'],
+                    'series' => $scripArr[$i]['series'],
+                    'status' => $scripArr[$i]['status'],                    
+                    'trading_status' => $scripArr[$i]['trading_status'],
+                    'issuedCap' => $scripArr[$i]['issuedCap'],
+                    'faceValue' => $scripArr[$i]['faceValue'],                    
+                    'isin_no' => $scripArr[$i]['isin'],
+                    'industry_sector_id' => $sectorIndustries->pivot->id,                    
+                    'listing_date' => date('Y-m-d',strtotime($scripArr[$i]['listingDate'])),                    
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now()
-                                 
                 ];
             }
         }
-    
         Scrip::insert($data);
         return "inserted";       
     }

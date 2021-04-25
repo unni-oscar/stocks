@@ -18,14 +18,17 @@ class CreateScripsTable extends Migration
             $table->string('symbol');
             $table->string('name');
             $table->string('series')->nullable();
+            $table->string('status')->nullable();            
+            $table->string('trading_status')->nullable();
+            $table->bigInteger('issuedCap')->nullable();
             $table->integer('bse_code')->nullable();
             $table->string('isin_no');
             $table->date('listing_date')->nullable();
             $table->string('group')->nullable();
-            $table->unsignedBigInteger("industry_id")->nullable();
+            $table->integer('faceValue')->nullable();
+            $table->unsignedBigInteger("industry_sector_id")->nullable();            
             $table->timestamps();
-            $table->foreign('industry_id')->references('id')->on('industries');
-            
+            $table->foreign('industry_sector_id')->references('id')->on('industry_sector');                        
         });
     }
 
