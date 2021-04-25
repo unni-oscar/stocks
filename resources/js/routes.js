@@ -5,6 +5,8 @@ import Bhavcopy from './components/Bhavcopy.vue';
 import Master from './components/Master.vue';
 import Sectors from './components/Sectors.vue';
 import Industries from './components/Industries.vue';
+import Scrip from './components/Scrip.vue';
+
 // import CreateProduct from './components/CreateProduct.vue';
 // import EditProduct from './components/EditProduct.vue';
  
@@ -43,6 +45,11 @@ export const routes = [
         name: 'industries',
         path: '/industries',
         component: Industries
+    },
+    {
+        name: 'scrip',
+        path: '/scrip',
+        component: Scrip
     }
     // {
     //     name: 'create',

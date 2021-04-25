@@ -25,6 +25,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::middleware('api')->group(function () {
     Route::post('scrips', [ScripController::class, 'getAllScrips']);
+    Route::get('scrip/{id}', [ScripController::class, 'scrip']);
+    // Route::get('scrip/{id}', function ($id) {
+    //     return 'scrip '.$id;
+    // });
+    
     Route::get('groups', [ScripController::class, 'getGroups']);
     Route::get('setMasterFile', [IndustryController::class, 'setScripMaster']);
 
@@ -37,8 +42,9 @@ Route::middleware('api')->group(function () {
     Route::get('industriesForSector/{id}', [IndustryController::class, 'getIndustriesForSector']);
 
     
-    
-    // getbhavcopy
+    Route::get('getbhavcopy/{date}', [BhavcopyController::class, 'addBhavcopy']);
+
+    // getbhavcopy   addBhavcopy
 
     // Route::resource('scrips', ScripController::class);
     // Route::resource('setup', ScripController::class)->only(['setup']);

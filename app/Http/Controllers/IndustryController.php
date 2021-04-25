@@ -153,6 +153,19 @@ class IndustryController extends Controller
         return "Inserted";
     }
 
+    function setup(){
+        $file = public_path('symbols.csv');
+        $scripArr = $this->csvToArray($file);
+        $data = [];
+
+        for ($i = 0; $i < count($scripArr); $i ++)
+        {
+            $data[] =  $scripArr[$i]['SYMBOL'];
+
+        }
+        return $data;
+
+    }
     function nameExists($name, $sName, $array) {
         foreach ($array as $key => $val) {            
             if(strcmp(trim($val['iname']),$name ) == 0 && ($val['sname'] == $sName) ){

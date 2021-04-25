@@ -15,6 +15,15 @@ class ScripController extends Controller
     {
         
     }
+    public function scrip($id)
+    {
+        // return $id;
+        $scrip = Scrip::with('industry_sector.sector', 'industry_sector.industry')->find($id);
+        return $scrip;
+            // ->get();
+        // return $request->query('id');
+        // return '$request';
+    }
     public function getGroups() {
         return Scrip::select('group')->distinct()->orderBy('group')->get();
     }
@@ -119,8 +128,8 @@ class ScripController extends Controller
                     'series' => $scripArr[$i]['series'],
                     'status' => $scripArr[$i]['status'],                    
                     'trading_status' => $scripArr[$i]['trading_status'],
-                    'issuedCap' => $scripArr[$i]['issuedCap'],
-                    'faceValue' => $scripArr[$i]['faceValue'],                    
+                    'issuedCap' => ($scripArr[$i]['issuedCap'] == '-') ? 0 : $scripArr[$i]['issuedCap'],
+                    'faceValue' => ($scripArr[$i]['faceValue'] == '-') ? 0 :$scripArr[$i]['faceValue'],                    
                     'isin_no' => $scripArr[$i]['isin'],
                     'industry_sector_id' => $sectorIndustries->pivot->id,                    
                     'listing_date' => date('Y-m-d',strtotime($scripArr[$i]['listingDate'])),                    

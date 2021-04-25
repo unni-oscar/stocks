@@ -29,7 +29,7 @@
                 <th>Sector</th>
                 <th>Industry</th>
                 
-                <!-- <th>Actions</th> -->
+                <th>Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -42,9 +42,8 @@
                   <td>{{ scrip.industry_sector.sector.name }}</td>
                 <td>{{ scrip.industry_sector.industry.name }}</td>
                 <td>
-                    <div class="btn-group" role="group">
-                        <!-- <router-link :to="{name: 'edit', params: { id: product.id }}" class="btn btn-success">Edit</router-link> -->
-                        <!-- <button class="btn btn-danger" @click="deleteProduct(product.id)">Delete</button> -->
+                    <div class="btn-group" role="group">                        
+                        <router-link target="_blank" class="btn btn-success" :to="{ path: 'scrip', query: { id: scrip.id }}">View</router-link>                        
                     </div>
                 </td>
             </tr>
