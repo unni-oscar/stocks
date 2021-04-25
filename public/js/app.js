@@ -2037,7 +2037,7 @@ __webpack_require__.r(__webpack_exports__);
     console.log('Bhavcopy Component mounted.');
   },
   created: function created() {
-    this.axios.get('http://localhost:8000/api/getbhavcopy/').then(function (response) {
+    this.axios.get('http://localhost:8000/api/getbhavcopy/23-04-2021').then(function (response) {
       console.log(response.data); // this.scrips = response.data;
     });
   }

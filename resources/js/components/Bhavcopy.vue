@@ -21,7 +21,7 @@
         },
         created() {
             this.axios
-                .get('http://localhost:8000/api/getbhavcopy/')
+                .get('http://localhost:8000/api/getbhavcopy/23-04-2021')
                 .then(response => {
                     console.log(response.data);
                     // this.scrips = response.data;
