@@ -18,7 +18,7 @@ class ScripController extends Controller
     public function scrip($id)
     {
         // return $id;
-        $scrip = Scrip::with('industry_sector.sector', 'industry_sector.industry')->find($id);
+        $scrip = Scrip::with('industry_sector.sector', 'industry_sector.industry', 'bhavcopies')->find($id);
         return $scrip;
             // ->get();
         // return $request->query('id');

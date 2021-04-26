@@ -41,7 +41,7 @@ class Scrip extends Model
     // {
     //     return $this->belongsTo(Sector::class);
     // }
-    public function bhavcopy()
+    public function bhavcopies()
     {
         return $this->hasMany(Bhavcopy::class);
     }
