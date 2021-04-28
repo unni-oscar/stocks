@@ -2195,11 +2195,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       id: '',
-      scrip: ''
+      scrip: '',
+      sector: '',
+      industry: ''
     };
   },
   mounted: function mounted() {
@@ -2211,8 +2214,9 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.axios.get('http://localhost:8000/api/scrip/' + this.id).then(function (response) {
-        console.log(response.data);
         _this.scrip = response.data;
+        _this.sector = response.data.industry_sector.sector.name;
+        _this.industry = response.data.industry_sector.industry.name;
       });
     }
   }
@@ -39138,11 +39142,11 @@ var render = function() {
             _c("br"),
             _vm._v(" "),
             _c("b", [_vm._v("Sector:")]),
-            _vm._v(" " + _vm._s(_vm.scrip.industry_sector.sector.name) + " "),
+            _vm._v(" " + _vm._s(_vm.sector) + " \n                    "),
             _c("b", { staticStyle: { "margin-left": "50px" } }, [
               _vm._v("Industry:")
             ]),
-            _vm._v(" " + _vm._s(_vm.scrip.industry_sector.industry.name)),
+            _vm._v(" " + _vm._s(_vm.industry)),
             _c("br")
           ]),
           _vm._v(" "),
